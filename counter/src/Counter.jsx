@@ -5,9 +5,9 @@ export default function Counter(){
     return(
         <div>
             <h2>Counter App</h2>
-            <p>Count : {value}</p>
+            <p>Count: {value}</p>
             <button onClick={()=> setValue((c)=>c+1)}>Increment</button>   
-            <button onClick={()=> setValue((c)=>c-1)}>Decrement</button>     
+            <button onClick={()=> setValue(()=>0-1)}>Decrement</button>     
        </div>
     )
 }
